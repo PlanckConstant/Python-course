@@ -17,6 +17,6 @@ print('5 + 2 = {}'.format(5+2))
 
 
 ###### f-strings #######
-print(f'My name is {name}. I\'m {age}.')              #f--strings позволяет подставлять непосрественно переменную
+print(f'My name is {name}. I\'m {age}.')              #f--strings позволяет подставлять непосрественно переменную. Использовать такую запись
 print(f'My name is {name}. I\'m {age+4}.')            #и проводить вычислления
 print(f'5 + 2 = {5+6}')
