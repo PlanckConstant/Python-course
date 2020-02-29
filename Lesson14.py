@@ -1,6 +1,25 @@
-year = 1980
-while year <= 2020:
-    print(year)
-    year += 1
-else:
-    print('Done')
+l = [1, 2, 3, 'hello', ['test', 10], 'word', True]
+l2 = list('hello')
+l3 = list((1, 2, 5))                        #Кортеж внутри списка
+l4 = [i for i in 'hello']                   #каждый символ в строке
+l5 = [i for i in 'hello word' if i != ' ']  #Кроме ' '
+l51 = [i+'(str)'+i for i in 'hello word!' if i not in [' ', 'e', 'o', '!']]   #С условиями, есл и i не содержит ...
+
+print(l, l2, l3, l4, l5, l51, sep='\n')
+
+###### Генераторы ######
+print(range(10))            #Возврящает первую и последнюю цифру последовательности
+print(list(range(10)))      #Возвращает всю последовательность от 0 (по умолчанию)
+print(list(range(2, 10)))   #Возвращает всю последовательность (старт, стоп)
+print(list(range(1, 10, 2)))#Возвращает всю последовательность с шагом (старт, стоп, шаг)
+
+l6 =  list(range(0, 11))
+print(l6)
+
+######## Вложенные  цыклы ########
+for i in range(1, 3):
+    print(f'Внешний цикл # {i}')
+    for j in range(1 ,3):
+        print(f'\tВнутренний цикл # {j}')
+
+
